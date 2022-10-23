@@ -19,8 +19,8 @@ function App() {
       .catch((err) => console.log(err));
   }, [term]);
 
-  return (
-    <div className="container mx-auto mb-10">
+  return ( 
+    <div className="container mx-auto mb-10 p-24 bg-custom">
       <ImageSearch searchText={(text) => setTerm(text)} />
 
       {!isLoading && images.length === 0 && (
